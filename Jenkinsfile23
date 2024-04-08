@@ -8,6 +8,7 @@ stage ('CheckoutCode'){
 git branch: 'development', url: 'https://github.com/paulfedo/maven-web-application.git'
 }
 
+/*
 //BuildStage
 
 stage ('Build_Stage') {
@@ -35,6 +36,6 @@ sshagent(['89909c33-a263-4871-91e4-2e5b620bc932']) {
   sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@172.31.19.126:/opt/apache-tomcat-9.0.86/webapps"
 }
 }
-
+*/
 
 }//Node Closing
